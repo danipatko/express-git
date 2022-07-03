@@ -37,7 +37,6 @@ const defaultEnv: { [key: string]: any } = {
     SERVER_PROTOCOL,
     SCRIPT_NAME,
     GATEWAY_INTERFACE,
-    REMOTE_USER: 'danipatko',
     GIT_HTTP_EXPORT_ALL: '',
 };
 
@@ -106,7 +105,7 @@ app.all('*', async (req, res, next) => {
     // these 2 are for debug
     proc.stdout.pipe(process.stdout);
 
-    new HeaderParser(proc.stdout, res, (headers, status) => {
+    HeaderParser.parse(proc.stdout, res, (headers, status) => {
         res.statusCode = status;
         for (const header in headers) {
             res.setHeader(header, headers[header]);
@@ -130,6 +129,12 @@ class HeaderParser {
     private fired = false;
     public status = 200;
     public out: Stream.Writable;
+
+    public static parse = (
+        _stdout: Stream.Readable,
+        _out: Stream.Writable,
+        handler: (headers: { [key: string]: any }, status: number) => void
+    ) => new HeaderParser(_stdout, _out, handler);
 
     constructor(
         _stdout: Stream.Readable,
