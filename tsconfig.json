@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        // "noEmit": true,
+        "target": "ESNext",
+        "newLine": "lf",
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true
+    },
+    "include": ["src/**/*.ts"],
+    "exclude": []
+}
