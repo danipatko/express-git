@@ -2,6 +2,7 @@
     "name": "@danipatko/express-git",
     "version": "1.0.1",
     "description": "Apache replacement for the git-smart-http cgi script written in Typescript",
+    "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "node build.cjs",
