@@ -1,4 +1,4 @@
-import ServeGit from './dist/index.js';
+import ServeGit from '@danipatko/express-git';
 import express from 'express';
 const app = express();
 
