@@ -1,6 +1,6 @@
 {
     "name": "@danipatko/express-git",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Apache replacement for the git-smart-http cgi script written in Typescript",
     "main": "index.js",
     "scripts": {
