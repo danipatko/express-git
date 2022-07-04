@@ -1,4 +1,4 @@
-# git-cgi-express
+# git-express
 Express middleware that handles git requests using the git-http-backend CGI script.
 ## Example
 ```js
