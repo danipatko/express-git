@@ -1,8 +1,7 @@
 {
-    "name": "git-cgi-node",
+    "name": "@danipatko/express-git",
     "version": "1.0.0",
     "description": "Apache replacement for the git-smart-http cgi script written in Typescript",
-    "main": "build.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "node build.cjs",
@@ -10,14 +9,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/danipatko/git-cgi-node.git"
+        "url": "git+https://github.com/danipatko/express-git.git"
     },
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/danipatko/git-cgi-node/issues"
+        "url": "https://github.com/danipatko/express-git/issues"
     },
-    "homepage": "https://github.com/danipatko/git-cgi-node#readme",
+    "homepage": "https://github.com/danipatko/express-git#readme",
     "devDependencies": {
         "@types/express": "^4.17.13",
         "@types/node": "^18.0.0",
@@ -26,5 +25,15 @@
     "dependencies": {
         "express": "^4.18.1"
     },
-    "type": "module"
+    "type": "module",
+    "keywords": [
+        "git",
+        "cgi",
+        "express"
+    ],
+    "files": [
+        "index.js",
+        "README.md",
+        "LICENSE"
+    ]
 }

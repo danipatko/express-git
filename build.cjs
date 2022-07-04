@@ -4,7 +4,7 @@ require('esbuild')
         bundle: true,
         target: 'esnext',
         format: 'esm',
-        outdir: './dist/',
+        outfile: './index.js',
         platform: 'node',
         tsconfig: 'tsconfig.json',
         entryPoints: ['./src/index.ts'],
