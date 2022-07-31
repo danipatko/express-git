@@ -7,7 +7,6 @@
         "moduleResolution": "node",
         "allowSyntheticDefaultImports": true,
         "declaration": true,
-        "composite": false,
         "emitDeclarationOnly": true,
         "outDir": "."
     },
