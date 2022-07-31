@@ -1,5 +1,21 @@
+declare module '@danipatko/express-git';
 import { NextFunction, Request, Response } from 'express';
-import { BackendConfig } from './env';
+export interface BackendConfig {
+    /**
+     * The absolute path to the folder containing the hosted git repositories.
+     * Make sure it has no permission restrictions.
+     */
+    projectRoot: string;
+    /**
+     * The port of the site
+     */
+    port: number;
+    /**
+     * The hostname of the site
+     * e.g. `0.0.0.0`
+     */
+    host: string;
+}
 declare type ExpressHanderFn = (req: Request, res: Response, next: NextFunction) => Promise<void> | void;
 /**
  * Express middleware to handle incoming git requests using
