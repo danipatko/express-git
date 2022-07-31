@@ -24,6 +24,7 @@
         "esbuild": "^0.14.48"
     },
     "dependencies": {
+        "@danipatko/express-git": "^1.0.2",
         "express": "^4.18.1"
     },
     "type": "module",

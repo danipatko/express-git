@@ -5,7 +5,10 @@
         "target": "ESNext",
         "newLine": "lf",
         "moduleResolution": "node",
-        "allowSyntheticDefaultImports": true
+        "allowSyntheticDefaultImports": true,
+        "declaration": true,
+        "emitDeclarationOnly": true,
+        "outDir": "."
     },
     "include": ["src/**/*.ts"],
     "exclude": []
